@@ -53,7 +53,7 @@ class Chat extends HTMLElement {
   appendMessage(text, time, author) {
     this.renderMessage(text, time, author);
     this.updateLocalStorage(text, time, author);
-    this.scrollTop = this.scrollHeight;
+    this.$chat.scrollTop = this.$chat.scrollHeight;
   }
 }
 
